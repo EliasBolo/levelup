@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Maria Papadopoulou",
+        "banner": "https://thetork.com/demos/vue/educax/images/testimonial/home1/1.png",
+        "rating": 5,
+        "quote": "My daughter Sofia has been learning English at Level Up for six months now and her progress is amazing! The teachers are so patient and make learning fun. She actually looks forward to her lessons every week.",
+        "thumbnail": "https://thetork.com/demos/vue/educax/images/testimonial/home1/1.png"
+    },
+    {
+        "name": "Dimitris Kostas",
+        "banner": "https://thetork.com/demos/vue/educax/images/testimonial/home1/2.png",
+        "rating": 5,
+        "quote": "Level Up helped my son Nikos prepare for his German certification exams. The small class sizes mean he gets personal attention, and his confidence in speaking German has grown tremendously. Highly recommended!",
+        "thumbnail": "https://thetork.com/demos/vue/educax/images/testimonial/home1/2.png"
+    },
+    {
+        "name": "Anna Nikolaidou",
+        "banner": "https://thetork.com/demos/vue/educax/images/testimonial/home1/3.png",
+        "rating": 5,
+        "quote": "We chose Level Up for our twins and couldn't be happier. The personalized approach really works - each child learns at their own pace. The teachers understand that every student is different and adapt accordingly.",
+        "thumbnail": "https://thetork.com/demos/vue/educax/images/testimonial/home1/3.png"
+    },
+    {
+        "name": "Giorgos Stavrou",
+        "banner": "https://thetork.com/demos/vue/educax/images/testimonial/home1/4.png",
+        "rating": 4,
+        "quote": "My daughter started as a complete beginner in English and now she's speaking confidently with her international friends online. The interactive methods at Level Up make all the difference. Thank you for believing in her!",
+        "thumbnail": "https://thetork.com/demos/vue/educax/images/testimonial/home1/4.png"
+    },
+    {
+        "name": "Elena Christou",
+        "banner": "https://thetork.com/demos/vue/educax/images/testimonial/home1/5.png",
+        "rating": 5,
+        "quote": "Level Up is more than just a language school - it's a place where my son Alex discovered his love for learning. The warm, encouraging environment has boosted not just his English skills but his overall confidence too.",
+        "thumbnail": "https://thetork.com/demos/vue/educax/images/testimonial/home1/5.png"
+    }
+]
