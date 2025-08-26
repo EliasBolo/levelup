@@ -31,10 +31,13 @@ const Headerfour = () => {
 
 
   function closeAllMenus() {
-    let elements = document.querySelectorAll(".menu-item-has-children.open, .language-switcher.open");
+    let elements = document.querySelectorAll(".menu-item-has-children.open, .language-switcher.open, .mobile-language-switcher.open");
     elements.forEach((item) => {
       item.classList.remove('open')
-      item.querySelector('.submenu').style.display = 'none'
+      const submenu = item.querySelector('.submenu');
+      if (submenu) {
+        submenu.style.display = 'none'
+      }
     })
   }
   function toggleSearchField() {
@@ -138,12 +141,41 @@ return (
           </div>
           <div className="header-end">
               <div className="menu-area">
-                <div className="header-btn">
+                <div className="header-btn d-none d-md-block">
                   <Link href={isGreek ? "/el/contact" : "/contact"}
                     className="trk-btn trk-btn--rounded trk-btn--primary4 trk-btn--style2"
                   >
                     <span>{isGreek ? "Εγγραφή" : "Sign Up"}</span>
                   </Link>
+                </div>
+                
+                {/* Mobile Language Switcher */}
+                <div className="mobile-language-switcher d-xl-none" style={{marginRight: '15px'}}>
+                  <Link href="#" onClick={toggleActive} style={{
+                    color: 'white',
+                    fontSize: '16px',
+                    textDecoration: 'none',
+                    background: 'rgba(255,255,255,0.1)',
+                    padding: '8px 12px',
+                    borderRadius: '6px',
+                    border: '1px solid rgba(255,255,255,0.2)'
+                  }}>
+                    <span>🌐 {isGreek ? "EL" : "EN"}</span>
+                  </Link>
+                  <ul className="submenu" style={{
+                    position: 'absolute',
+                    top: '100%',
+                    right: '0',
+                    background: 'white',
+                    boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                    borderRadius: '6px',
+                    minWidth: '150px',
+                    zIndex: '1000',
+                    display: 'none'
+                  }}>
+                    <li style={{padding: '0'}}><Link href="/" style={{color: '#333', padding: '10px 15px', display: 'block', textDecoration: 'none'}}>🇺🇸 English</Link></li>
+                    <li style={{padding: '0'}}><Link href="/el" style={{color: '#333', padding: '10px 15px', display: 'block', textDecoration: 'none'}}>🇬🇷 Ελληνικά</Link></li>
+                  </ul>
                 </div>
              
                 <button 
@@ -153,10 +185,16 @@ return (
                   aria-expanded={activeMenu}
                   aria-controls="navigation"
                   type="button"
+                  style={{
+                    background: 'transparent',
+                    border: 'none',
+                    padding: '10px 8px',
+                    zIndex: '1001'
+                  }}
                 >
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                  <span style={{background: 'white'}}></span>
+                  <span style={{background: 'white'}}></span>
+                  <span style={{background: 'white'}}></span>
                 </button>
               </div>
             </div>
