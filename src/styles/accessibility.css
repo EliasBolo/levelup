@@ -1,0 +1,379 @@
+/* Skip Navigation Links */
+.skip-links {
+  position: fixed;
+  top: -100px;
+  left: 6px;
+  z-index: 9999;
+}
+
+.skip-link {
+  position: relative;
+  display: block;
+  top: -100px;
+  color: white;
+  background: #000;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  font-weight: bold;
+  transition: top 0.3s;
+  margin-bottom: 2px;
+}
+
+.skip-link:focus {
+  top: 0;
+  color: white;
+  text-decoration: none;
+}
+
+/* Screen reader only content */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Form labels visibility */
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Focus indicators */
+*:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Ensure buttons have visible focus */
+button:focus,
+.trk-btn:focus,
+a:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .skip-link {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
+}
+
+/* Accessibility Widget */
+.accessibility-float-btn {
+  position: fixed !important;
+  right: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 60px !important;
+  height: 60px !important;
+  background: #007bff !important;
+  color: white !important;
+  border: 2px solid #ffffff !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  z-index: 999999 !important;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.8) !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  filter: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  -webkit-filter: none !important;
+  outline: none !important;
+}
+
+/* Ensure button is always visible even in grayscale and high contrast */
+.grayscale .accessibility-float-btn,
+.high-contrast .accessibility-float-btn,
+body.grayscale .accessibility-float-btn,
+body.high-contrast .accessibility-float-btn,
+html.grayscale .accessibility-float-btn,
+html.high-contrast .accessibility-float-btn,
+.grayscale .accessibility-float-btn *,
+.high-contrast .accessibility-float-btn *,
+body.grayscale .accessibility-float-btn *,
+body.high-contrast .accessibility-float-btn *,
+html.grayscale .accessibility-float-btn *,
+html.high-contrast .accessibility-float-btn * {
+  filter: none !important;
+  -webkit-filter: none !important;
+  background: #007bff !important;
+  color: white !important;
+  border: 2px solid #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+  position: fixed !important;
+  z-index: 999999 !important;
+  transform: translateY(-50%) !important;
+}
+
+/* Override any filters specifically for the accessibility button */
+.accessibility-float-btn,
+.accessibility-float-btn *,
+.accessibility-float-btn img {
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+/* When body has grayscale, ensure button is never affected */
+body.grayscale .accessibility-float-btn,
+body.grayscale .accessibility-float-btn *,
+body.grayscale .accessibility-float-btn img {
+  filter: brightness(0) invert(1) !important;
+  -webkit-filter: brightness(0) invert(1) !important;
+}
+
+/* When body has high-contrast, ensure button stays blue */
+body.high-contrast .accessibility-float-btn {
+  background: #007bff !important;
+  border: 3px solid #ffffff !important;
+  filter: none !important;
+  -webkit-filter: none !important;
+}
+
+body.high-contrast .accessibility-float-btn *,
+body.high-contrast .accessibility-float-btn img {
+  filter: brightness(0) invert(1) !important;
+  -webkit-filter: brightness(0) invert(1) !important;
+}
+
+.accessibility-float-btn:hover {
+  background: #0056b3;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+}
+
+.accessibility-float-btn:focus {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.accessibility-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 380px;
+  height: 100vh;
+  background: white;
+  border-left: 1px solid #ddd;
+  z-index: 9999;
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accessibility-sidebar.open {
+  right: 0;
+}
+
+.accessibility-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  background: #007bff;
+  color: white;
+}
+
+.accessibility-sidebar-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.accessibility-close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+}
+
+.accessibility-close-btn:hover {
+  opacity: 0.8;
+}
+
+.accessibility-sidebar-content {
+  padding: 20px;
+}
+
+.accessibility-control-group {
+  margin-bottom: 25px;
+}
+
+.accessibility-control-group h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.accessibility-control-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.accessibility-control-buttons button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 50px;
+  transition: background 0.2s ease;
+}
+
+.accessibility-control-buttons button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.accessibility-control-buttons button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.font-size-display {
+  font-weight: 600;
+  color: #333;
+  min-width: 50px;
+  text-align: center;
+}
+
+.accessibility-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+
+.accessibility-toggle:hover {
+  background: #e9ecef;
+  border-color: #007bff;
+}
+
+.accessibility-toggle.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.accessibility-toggle .toggle-icon {
+  font-size: 20px;
+}
+
+.accessibility-reset-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.accessibility-reset-btn:hover {
+  background: #c82333;
+}
+
+.accessibility-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9997;
+}
+
+/* Accessibility Effects */
+.high-contrast {
+  filter: contrast(150%) brightness(110%);
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.large-text h1, .large-text h2, .large-text h3, .large-text h4, .large-text h5, .large-text h6 {
+  font-size: 1.3em !important;
+}
+
+.large-text p, .large-text span, .large-text div, .large-text a, .large-text button {
+  font-size: 1.2em !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .accessibility-sidebar {
+    width: 100vw;
+    right: -100vw;
+  }
+  
+  .accessibility-float-btn {
+    width: 50px;
+    height: 50px;
+    right: 15px;
+  }
+}
+
+/* High contrast mode adjustments */
+@media (prefers-contrast: high) {
+  .accessibility-float-btn {
+    border: 2px solid #ffffff;
+  }
+  
+  .accessibility-sidebar {
+    border-left: 2px solid #000000;
+  }
+}
+
+/* Reduced motion support for widget */
+@media (prefers-reduced-motion: reduce) {
+  .accessibility-float-btn,
+  .accessibility-sidebar {
+    transition: none;
+  }
+}
