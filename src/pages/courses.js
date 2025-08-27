@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Headerfour from "../components/headers/Headerfour";
 import Footerfour from "../components/footers/Footerfour";
-import PageHeader from "../components/modules/Home/PageHeader";
-import CoursesData from "../api/courses.json";
-import CourseCard from "../components/partials/CourseCard";
+import PageHeader from "../components/modules/Home/el/PageHeader";
+import CoursesData from "../api/el/courses.json";
+import CourseCard from "../components/partials/el/CourseCard";
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
@@ -52,8 +52,8 @@ const Courses = () => {
     <div>
       <Headerfour />
       <PageHeader
-        title="Courses"
-        subtitle="Courses"
+        title="Μαθήματα"
+        subtitle="Μαθήματα"
         image='images/bg/home1/2.png'
       />
       

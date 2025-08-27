@@ -7,9 +7,9 @@ const Headerfour = () => {
   const [activeMenu, setActiveMenu] = useState(false);
   const router = useRouter()
   
-  // Check if we're on Greek version
-  const isGreek = router.asPath.startsWith('/el')
-  const currentLang = isGreek ? 'el' : 'en'
+  // Check if we're on English version  
+  const isEnglish = router.asPath.startsWith('/en')
+  const currentLang = isEnglish ? 'en' : 'el'
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -87,10 +87,10 @@ return (
     {/* Skip Navigation Links */}
     <div className="skip-links">
       <a href="#main-content" className="skip-link">
-        {isGreek ? "Μετάβαση στο κύριο περιεχόμενο" : "Skip to main content"}
+        {isEnglish ? "Skip to main content" : "Μετάβαση στο κύριο περιεχόμενο"}
       </a>
       <a href="#navigation" className="skip-link">
-        {isGreek ? "Μετάβαση στην πλοήγηση" : "Skip to navigation"}
+        {isEnglish ? "Skip to navigation" : "Μετάβαση στην πλοήγηση"}
       </a>
     </div>
     
@@ -108,31 +108,31 @@ return (
               </Link>
             </div>
             <div className="menu-area">
-              <nav role="navigation" aria-label={isGreek ? "Κύρια πλοήγηση" : "Main navigation"} id="navigation">
+              <nav role="navigation" aria-label={isEnglish ? "Main navigation" : "Κύρια πλοήγηση"} id="navigation">
               <ul className= {
                     activeMenu
                       ? "menu menu--style1 active"
                       : "menu menu--style1"
                   } role="menubar">
                 <li>
-                  <Link href={isGreek ? "/el" : "/"}>{isGreek ? "Αρχική" : "Home"}</Link>
+                  <Link href={isEnglish ? "/en" : "/"}>{isEnglish ? "Home" : "Αρχική"}</Link>
                 </li>
                 <li>
-                  <Link href={isGreek ? "/el/courses" : "/courses"}>{isGreek ? "Μαθήματα" : "Courses"}</Link>
+                  <Link href={isEnglish ? "/en/courses" : "/courses"}>{isEnglish ? "Courses" : "Μαθήματα"}</Link>
                 </li>
                 <li>
-                  <Link href={isGreek ? "/el/about" : "/about"}>{isGreek ? "Σχετικά με εμάς" : "About Us"}</Link>
+                  <Link href={isEnglish ? "/en/about" : "/about"}>{isEnglish ? "About Us" : "Σχετικά με εμάς"}</Link>
                 </li>
                 <li>
-                  <Link href={isGreek ? "/el/contact" : "/contact"}>{isGreek ? "Επικοινωνία" : "Contact Us"}</Link>
+                  <Link href={isEnglish ? "/en/contact" : "/contact"}>{isEnglish ? "Contact Us" : "Επικοινωνία"}</Link>
                 </li>
                 <li className="language-switcher d-none d-xl-block">
                   <Link href="#" onClick={toggleActive}>
-                    <span>🌐 {isGreek ? "EL" : "EN"}</span>
+                    <span>🌐 {isEnglish ? "EN" : "EL"}</span>
                   </Link>
                   <ul className="submenu">
-                    <li><Link href="/?lang=en">🇺🇸 English</Link></li>
-                    <li><Link href="/el">🇬🇷 Ελληνικά</Link></li>
+                    <li><Link href="/en">🇺🇸 English</Link></li>
+                    <li><Link href="/">🇬🇷 Ελληνικά</Link></li>
                   </ul>
                 </li>
               </ul>
@@ -142,10 +142,10 @@ return (
           <div className="header-end">
               <div className="menu-area">
                 <div className="header-btn d-none d-md-block">
-                  <Link href={isGreek ? "/el/contact" : "/contact"}
+                  <Link href={isEnglish ? "/en/contact" : "/contact"}
                     className="trk-btn trk-btn--rounded trk-btn--primary4 trk-btn--style2"
                   >
-                    <span>{isGreek ? "Εγγραφή" : "Sign Up"}</span>
+                    <span>{isEnglish ? "Sign Up" : "Εγγραφή"}</span>
                   </Link>
                 </div>
                 
@@ -160,7 +160,7 @@ return (
                     borderRadius: '6px',
                     border: '1px solid rgba(255,255,255,0.2)'
                   }}>
-                    <span>🌐 {isGreek ? "EL" : "EN"}</span>
+                    <span>🌐 {isEnglish ? "EN" : "EL"}</span>
                   </Link>
                   <ul className="submenu" style={{
                     position: 'absolute',
@@ -173,15 +173,15 @@ return (
                     zIndex: '1000',
                     display: 'none'
                   }}>
-                    <li style={{padding: '0'}}><Link href="/?lang=en" style={{color: '#333', padding: '10px 15px', display: 'block', textDecoration: 'none'}}>🇺🇸 English</Link></li>
-                    <li style={{padding: '0'}}><Link href="/el" style={{color: '#333', padding: '10px 15px', display: 'block', textDecoration: 'none'}}>🇬🇷 Ελληνικά</Link></li>
+                    <li style={{padding: '0'}}><Link href="/en" style={{color: '#333', padding: '10px 15px', display: 'block', textDecoration: 'none'}}>🇺🇸 English</Link></li>
+                    <li style={{padding: '0'}}><Link href="/" style={{color: '#333', padding: '10px 15px', display: 'block', textDecoration: 'none'}}>🇬🇷 Ελληνικά</Link></li>
                   </ul>
                 </div>
              
                 <button 
                   className={activeMenu ? "header-bar d-xl-none home4 active" : "header-bar d-xl-none home4"} 
                   onClick={toggleMenu}
-                  aria-label={isGreek ? "Άνοιγμα μενού πλοήγησης" : "Open navigation menu"}
+                  aria-label={isEnglish ? "Open navigation menu" : "Άνοιγμα μενού πλοήγησης"}
                   aria-expanded={activeMenu}
                   aria-controls="navigation"
                   type="button"
@@ -202,28 +202,28 @@ return (
       </div>
     </div>
   </header>
-  <div className="searchbar" role="search" aria-label={isGreek ? "Αναζήτηση" : "Search"}>
+  <div className="searchbar" role="search" aria-label={isEnglish ? "Search" : "Αναζήτηση"}>
       <div className="searchbar__wrapper">
         <div className="searchbar__inner">
           <form className="form form-subscribe" role="search">
             <div className="input-group">
               <label htmlFor="search-input" className="sr-only">
-                {isGreek ? "Αναζήτηση περιεχομένου" : "Search content"}
+                {isEnglish ? "Search content" : "Αναζήτηση περιεχομένου"}
               </label>
               <input
                 id="search-input"
                 type="text"
                 className="form-control style1"
-                placeholder={isGreek ? "Αναζήτηση..." : "Search now..."}
-                aria-label={isGreek ? "Εισάγετε όρους αναζήτησης" : "Enter search terms"}
+                placeholder={isEnglish ? "Search now..." : "Αναζήτηση..."}
+                aria-label={isEnglish ? "Enter search terms" : "Εισάγετε όρους αναζήτησης"}
               />
               <span className="input-group-btn">
                 <button
                   className="trk-btn search-btn trk-btn--primary3"
                   type="submit"
-                  aria-label={isGreek ? "Αναζήτηση" : "Search"}
+                  aria-label={isEnglish ? "Search" : "Αναζήτηση"}
                 >
-                  {isGreek ? "Αναζήτηση" : "Search"}
+                  {isEnglish ? "Search" : "Αναζήτηση"}
                 </button>
               </span>
             </div>
@@ -232,7 +232,7 @@ return (
         <button 
           className="searchbar__close" 
           onClick={toggleSearchField}
-          aria-label={isGreek ? "Κλείσιμο αναζήτησης" : "Close search"}
+          aria-label={isEnglish ? "Close search" : "Κλείσιμο αναζήτησης"}
           type="button"
         >
           ✕

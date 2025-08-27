@@ -1,9 +1,9 @@
-import ContactForm from "../components/modules/Contact/ContactForm";
-import DetailsInfo from "../components/modules/Contact/DetailsInfo";
+import ContactForm from "../components/modules/Contact/el/ContactForm";
+import DetailsInfo from "../components/modules/Contact/el/DetailsInfo";
 import MapLink from "../components/modules/Contact/MapLink";
 import Newsletter from "../components/modules/newsletter/Newsletter";
 import Footerfour from "../components/footers/Footerfour";
-import PageHeader from "../components/modules/Home/PageHeader";
+import PageHeader from "../components/modules/Home/el/PageHeader";
 import Headerfour from "../components/headers/Headerfour";
 const Contact = () => {
 
@@ -11,8 +11,8 @@ const Contact = () => {
     <>
       <Headerfour />
       <PageHeader
-        title="Contact Us"
-        subtitle="Contact Us"
+        title="Επικοινωνία"
+        subtitle="Επικοινωνία"
         image='images/bg/home1/7.png'
       />
       

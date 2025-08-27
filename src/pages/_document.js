@@ -9,6 +9,16 @@ export default function Document() {
           rel="stylesheet"
         />
         <meta name="google-site-verification" content="cbCR82Ph0OSSgtBtEyzyxNE8kgFyKpTECvoGqjL76hw" />
+        
+        {/* Favicon and Icons */}
+        <link rel="icon" href="/images/favicon.png" />
+        <link rel="shortcut icon" href="/images/favicon.png" />
+        <link rel="apple-touch-icon" href="/images/favicon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png" />
+        <meta name="msapplication-TileImage" content="/images/favicon.png" />
+        
         {/* Start cookieyes banner */}
         <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/dfef73ea0152fb1b8abe8eb9/script.js"></script>
         {/* End cookieyes banner */}
