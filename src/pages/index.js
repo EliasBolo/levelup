@@ -1,5 +1,6 @@
 import Preloader from "../components/headers/Preloader/Preloader";
 import Headerfour from "../components/headers/Headerfour";
+import Meta from "../components/meta/Meta";
 import BannerContent from "../components/modules/Home4/BannerContent";
 import BannerIcon from "../components/modules/Home4/BannerIcon";
 import Categories from "../components/modules/Home4/Categories";
@@ -12,6 +13,7 @@ import Footerfour from "../components/footers/Footerfour";
 export default function Home() {
   return (
     <>
+      <Meta />
       <Preloader className={"preloader--style4"} />
       <Headerfour />
       <main id="main-content" role="main">

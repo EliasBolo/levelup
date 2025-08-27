@@ -131,7 +131,7 @@ return (
                     <span>🌐 {isGreek ? "EL" : "EN"}</span>
                   </Link>
                   <ul className="submenu">
-                    <li><Link href="/">🇺🇸 English</Link></li>
+                    <li><Link href="/?lang=en">🇺🇸 English</Link></li>
                     <li><Link href="/el">🇬🇷 Ελληνικά</Link></li>
                   </ul>
                 </li>
@@ -173,7 +173,7 @@ return (
                     zIndex: '1000',
                     display: 'none'
                   }}>
-                    <li style={{padding: '0'}}><Link href="/" style={{color: '#333', padding: '10px 15px', display: 'block', textDecoration: 'none'}}>🇺🇸 English</Link></li>
+                    <li style={{padding: '0'}}><Link href="/?lang=en" style={{color: '#333', padding: '10px 15px', display: 'block', textDecoration: 'none'}}>🇺🇸 English</Link></li>
                     <li style={{padding: '0'}}><Link href="/el" style={{color: '#333', padding: '10px 15px', display: 'block', textDecoration: 'none'}}>🇬🇷 Ελληνικά</Link></li>
                   </ul>
                 </div>
