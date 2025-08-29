@@ -18,7 +18,7 @@ const categoryListFour= [
     },
     {
         "icon": "https://thetork.com/demos/vue/educax/images/category/home4/4.png",
-        "title": "ΠΑΙΧΝΙΔΙΑ",
+        "title": "ΠΑΙΧΝΙΔΟΠΟΙΗΣΗ",
         "description": "Διαδραστικά παιχνίδια και εκπαιδευτικά παιχνίδια κάνουν την εκμάθηση γλωσσών συναρπαστική ενώ χτίζουν λεξιλόγιο και επικοινωνιακές δεξιότητες."
     }
 ]
@@ -38,8 +38,6 @@ const Categories = () => {
                         <div className="categories__item-content">
                             <h5 className="style4">{ item.title }</h5>
                             <p>{item.description}</p>
-                            <Link href="/el/contact" className="trk-btn trk-btn--rounded trk-btn--secondary4">{"Εγγραφή "}
-                                <span><FaArrowRight /></span> </Link>
                         </div>
                     </div>
                 </div>

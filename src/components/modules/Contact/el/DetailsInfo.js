@@ -17,7 +17,7 @@ const DetailsInfo = () => {
                         </div>
                         <div className="contact__info-content">
                             <h5>Τηλέφωνο</h5>
-                            <p>+30 27210 12345</p>
+                            <p>+30 (27210) 20 902</p>
                         </div>
                     </div>
                     <div className="contact__info-item">
@@ -26,7 +26,7 @@ const DetailsInfo = () => {
                         </div>
                         <div className="contact__info-content">
                             <h5>Email</h5>
-                            <p>info@levelupkalamata.gr</p>
+                            <p>levelupkalamata@gmail.com</p>
                         </div>
                     </div>
                     <div className="contact__info-item">
@@ -35,8 +35,8 @@ const DetailsInfo = () => {
                         </div>
                         <div className="contact__info-content">
                             <h5>Ώρες Λειτουργίας</h5>
-                            <p>Δευτέρα - Παρασκευή: 9:00π.μ. - 9:00μ.μ.<br/>
-                            Σάββατο: 9:00π.μ. - 2:00μ.μ.</p>
+                            <p>Δευτέρα - Παρασκευή: 15:00π.μ. - 21:00μ.μ.<br/>
+                            Σάββατο: 10:00π.μ. - 13:00μ.μ.</p>
                         </div>
                     </div>
                 </div>

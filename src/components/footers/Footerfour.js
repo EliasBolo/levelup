@@ -5,8 +5,8 @@ import { useRouter } from 'next/router';
 const Footerfour = () => {
   const router = useRouter()
   
-  // Check if we're on Greek version
-  const isGreek = router.asPath.startsWith('/el')
+  // Check if we're on Greek version - including default root path
+  const isGreek = router.pathname.startsWith('/el') || router.asPath.startsWith('/el') || router.locale === 'el' || router.pathname === '/' || router.asPath === '/'
 
   return (
     <>

@@ -15,9 +15,9 @@ const BannerContent = () => {
         <div className="banner__content banner__content--style1" data-aos="zoom-in" data-aos-duration="1000">
             <h1 className="title-font1">Ανάπτυξε τις γλωσσικές σου δεξιότητες μαζί μας</h1>
             <div className="btn-group justify-content-center">
-                <Link href="/el/contact" className="trk-btn trk-btn--rounded trk-btn--primary4">{"Εγγραφή "}
+                <Link href="/el/contact" className="trk-btn trk-btn--rounded trk-btn--primary4">{"Επικοινωνία "}
                     <span><FaArrowRight /></span> </Link>
-                <Link href="/el/about" className="trk-btn trk-btn--rounded trk-btn--defult">{"Το Σχολείο μας"} <span><FaArrowRight /></span></Link>
+                <Link href="/el/about" className="trk-btn trk-btn--rounded trk-btn--defult">{"Το Φροντιστήριο"} <span><FaArrowRight /></span></Link>
             </div>
         </div>
         <div className="banner-image">

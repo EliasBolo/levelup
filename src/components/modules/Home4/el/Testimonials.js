@@ -1,30 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
-import { FreeMode, Thumbs, Autoplay, EffectFade } from 'swiper/modules';
+import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
-import { useState } from 'react';
+import 'swiper/css/pagination';
 import testimonials from '../../../../api/index4/el/home-testimonials.json';
 
 const Testimonials = () => {
-  const [thumbswiper, setThumbsSwiper] = useState(null)
-
-  const breakpointsTumbs = {
-    768: {
-      slidesPerView: 5,
-    },
-    1200: {
-      slidesPerView: 5,
-      spaceBetween: 15,
-    },
-    1440: {
-      slidesPerView: 5,
-      spaceBetween: 20,
-    },
-  };
-
-
-  const effect = "fade"
 
   return (
     <section className='testimonial testimonial--style1 padding-top brand-4' style={{paddingBottom: 0}}>
@@ -34,22 +16,23 @@ const Testimonials = () => {
           <p className="style2">Διαβάστε τις εμπειρίες και τις επιτυχίες των μαθητών μας</p>
         </div>
         <div className="testimonial__wrapper">
-        <Swiper
-            className='testimonial__slider '
-            modules={[FreeMode, Thumbs, Autoplay, EffectFade]}
+          <Swiper
+            className='testimonial__slider'
+            modules={[Pagination, Autoplay, EffectFade]}
             loop={true}
-            autoplay={
-              {
-                delay:2000,
-                disableOnInteraction: false,
-              }
-            }
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
             speed={1000}
-            thumbs={{ swiper: thumbswiper && !thumbswiper.destroyed ? thumbswiper : null }}
             grabCursor={true}
             slidesPerView={1}
             effect={'fade'}
-
+            pagination={{
+              clickable: true,
+              bulletClass: 'swiper-pagination-bullet',
+              bulletActiveClass: 'swiper-pagination-bullet-active',
+            }}
           >
             {testimonials.map((item, index) => (
               <SwiperSlide key={index}>
@@ -68,23 +51,6 @@ const Testimonials = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <Swiper
-            className="testimonial__author mt-5"
-            modules={[Thumbs]}
-            breakpoints={breakpointsTumbs}
-            onClick={setThumbsSwiper}
-            slidesPerView={5}
-            spaceBetween={10}
-            onSwiper={setThumbsSwiper}
-          >
-            {testimonials.map((item, index) => (
-              <SwiperSlide key={index} >
-                <div className="testimonial__author-thumb">
-                  <img src={item.thumbnail} alt="author-image" />
                 </div>
               </SwiperSlide>
             ))}

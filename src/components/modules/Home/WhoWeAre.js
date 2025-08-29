@@ -19,12 +19,6 @@ const WhoWeAre = () => {
                     <div className="about__counter">
                         <div className="about__counter-item">
                             <h3>
-                                <Counter parentQuerySelector=".about__counter-item" start={10} end="10" delay={20} />+
-                            </h3>
-                            <p>Enrolled Students</p>
-                        </div>
-                        <div className="about__counter-item">
-                            <h3>
                                 <Counter parentQuerySelector=".about__counter-item" start={0}  end="10" delay={10} />
                             </h3>
                             <p>Years of Experience</p>

@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/bundle";
 const PopularCourse = () => {
   const router = useRouter();
-  const isGreek = router.asPath.startsWith('/el');
+  const isGreek = router.pathname.startsWith('/el') || router.asPath.startsWith('/el') || router.locale === 'el' || router.pathname === '/' || router.asPath === '/';
   const backgroundImage = {
     backgroundImage: "url(/images/bg/home4/1.png)",
   }
@@ -35,7 +35,7 @@ const PopularCourse = () => {
     <section className='course course--style4 bg--cover' style={backgroundImage}>
       <div className='container aos-init aos-animate' data-aos='fade-up' data-aos-duration="800" data-aos-delay="100">
         <div className="section-header text-center section-header--dark section-header--max20">
-          <h2 className="style2-h2">{isGreek ? "Πιο Δημοφιλή Μαθήματα" : "Most Popular Courses"}</h2>
+          <h2 className="style2-h2">{isGreek ? "Δημοφιλή μαθήματα" : "Most Popular Courses"}</h2>
         </div>
         <div className='course__wrapper'>
           <Swiper className='course__slider course__slider--style4'
