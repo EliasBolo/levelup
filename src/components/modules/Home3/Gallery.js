@@ -2,6 +2,7 @@ import { faMagnifyingGlass, faArrowRight } from '@fortawesome/free-solid-svg-ico
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 import FsLightbox from 'fslightbox-react'
 const images = [
   "/images/gallery/home4/1.png",
@@ -11,6 +12,9 @@ const images = [
   "/images/gallery/home4/5.png",
 ]
 const Gallery = () => {
+  const router = useRouter()
+  const isGreek = router.pathname.startsWith('/el') || router.asPath.startsWith('/el') || router.locale === 'el' || router.pathname === '/' || router.asPath === '/'
+  
   const [toggler, setToggler] = useState(false)
   const [productIndex, setProductIndex] = useState(0)
   const handleLightbox = (index)=>{
@@ -24,7 +28,7 @@ const Gallery = () => {
     <section className="gallery padding-bottom padding-top">
       <div className="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
         <div className="section-header text-center">
-          <h2 className="style2-h2 style2-h2--defult">Our School</h2>
+          <h2 className="style2-h2 style2-h2--defult">{isGreek ? "Ο χώρος μας" : "Our School"}</h2>
         </div>
         <div className="gallery__wrapper">
           <div className="row g-4">

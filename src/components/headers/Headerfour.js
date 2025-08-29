@@ -145,7 +145,7 @@ return (
                   <Link href={isEnglish ? "/en/contact" : "/contact"}
                     className="trk-btn trk-btn--rounded trk-btn--primary4 trk-btn--style2"
                   >
-                    <span>{isEnglish ? "Sign Up" : "Εγγραφή"}</span>
+                    <span>{isEnglish ? "Sign Up" : "Επικοινωνία"}</span>
                   </Link>
                 </div>
                 
