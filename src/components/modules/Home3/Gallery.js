@@ -43,7 +43,7 @@ const Gallery = () => {
                       e.preventDefault()
                     }}
                     >
-                      <img src="/images/gallery/home4/1.png" alt="gallery image" />
+                      <img src="/images/gallery/home4/1.webp" alt="gallery image" />
                     </Link>
                     <div className="gallery__item-view">
                       <div className="view-icon">
@@ -61,7 +61,7 @@ const Gallery = () => {
                       e.preventDefault()
                     }}
                     >
-                      <img src="/images/gallery/home4/2.png" alt="gallery image" />
+                      <img src="/images/gallery/home4/2.webp" alt="gallery image" />
                     </Link>
                     <div className="gallery__item-view">
                       <div className="view-icon">
@@ -82,7 +82,7 @@ const Gallery = () => {
                   e.preventDefault()
                 }}
                 >
-                  <img src="/images/gallery/home4/3.png" alt="gallery image" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" className="aos-init aos-animate" />
+                  <img src="/images/gallery/home4/3.webp" alt="gallery image" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100" className="aos-init aos-animate" />
                 </Link>
                 <div className="gallery__item-view">
                   <div className="view-icon">
@@ -102,7 +102,7 @@ const Gallery = () => {
                       e.preventDefault()
                     }}
                     >
-                      <img src="/images/gallery/home4/4.png" alt="gallery image" />
+                      <img src="/images/gallery/home4/4.webp" alt="gallery image" />
                     </Link>
                     <div className="gallery__item-view">
                       <div className="view-icon">
@@ -119,7 +119,7 @@ const Gallery = () => {
                       
                       e.preventDefault()
                     }}>
-                      <img src="/images/gallery/home4/5.png" alt="gallery image" />
+                      <img src="/images/gallery/home4/5.webp" alt="gallery image" />
                     </Link>
                     <div className="gallery__item-view">
                       <div className="view-icon">
