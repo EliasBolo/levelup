@@ -39,12 +39,8 @@ const WhoWeAre = () => {
                 </div>
             </div>
             <div className="col-lg-5 col-md-4">
-                <div className="about__thumb" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
-                    <div className="about__thumb-inner">
-                        <div className="about__thumb-image">
-                            <img src="/images/about/home1/2.png" alt="about-image"/>
-                        </div>
-                    </div>
+                <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                    <img src="/images/about/home1/2.webp" alt="about-image" style={{width: '100%', height: 'auto'}}/>
                 </div>
             </div>
         </div>
