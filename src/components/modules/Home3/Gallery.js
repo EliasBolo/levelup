@@ -5,11 +5,11 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import FsLightbox from 'fslightbox-react'
 const images = [
-  "/images/gallery/home4/1.png",
-  "/images/gallery/home4/2.png",
-  "/images/gallery/home4/3.png",
-  "/images/gallery/home4/4.png",
-  "/images/gallery/home4/5.png",
+  "/images/gallery/home4/1.webp",
+  "/images/gallery/home4/2.webp",
+  "/images/gallery/home4/3.webp",
+  "/images/gallery/home4/4.webp",
+  "/images/gallery/home4/5.webp",
 ]
 const Gallery = () => {
   const router = useRouter()

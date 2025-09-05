@@ -1,4 +1,3 @@
-import ContactForm from "../../components/modules/Contact/el/ContactForm";
 import DetailsInfo from "../../components/modules/Contact/el/DetailsInfo";
 import MapLink from "../../components/modules/Contact/MapLink";
 import Footerfour from "../../components/footers/Footerfour";
@@ -14,7 +13,7 @@ const Contact = () => {
       <PageHeader
         title="Επικοινωνία"
         subtitle="Επικοινωνία"
-        image='/images/bg/home1/7.png'
+        image='/images/banner/banner1.webp'
       />
       
       <div className="conatct padding-top padding-bottom">
@@ -22,11 +21,8 @@ const Contact = () => {
           <div className="contact__wrapper">
             <div className="row g-5 scroll-component">
               
-                  <div className="col-lg-6" data-aos="fade-right">
+                  <div className="col-lg-12" data-aos="fade-up">
                     <DetailsInfo />
-                  </div>
-                  <div className="col-lg-6" data-aos="fade-left">
-                    <ContactForm />
                   </div>
                
             </div>

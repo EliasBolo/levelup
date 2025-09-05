@@ -54,7 +54,7 @@ const Courses = () => {
       <PageHeader
         title="Μαθήματα"
         subtitle="Μαθήματα"
-        image='images/bg/home1/2.png'
+        image='/images/banner/banner2.webp'
       />
       
 

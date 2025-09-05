@@ -10,7 +10,7 @@ const About = () => {
                     <div className="about__thumb" data-aos="fade-right" data-aos-duration="800">
                         <div className="about__thumb-inner">
                             <div className="about__thumb-image">
-                                <img src="/images/about/3.png" alt="about-image"/>
+                                <img src="/images/about/3.webp" alt="about-image"/>
                             </div>
                         </div>
                     </div>
@@ -24,7 +24,7 @@ const About = () => {
                                 <li> <img src="/images/icon/svg/3.svg" alt="list-icon"/> Σύγχρονες μέθοδοι</li>
                                 <li> <img src="/images/icon/svg/3.svg" alt="list-icon"/> Έμπειροι Καθηγητές</li>
                                 <li> <img src="/images/icon/svg/3.svg" alt="list-icon"/> Φιλικό Περιβάλλον</li>
-                                <li> <img src="/images/icon/svg/3.svg" alt="list-icon"/> Τεχνολογικά Εργαλεία</li>
+                                <li> <img src="/images/icon/svg/3.svg" alt="list-icon"/> Μοντέρνα Εκπαιδευτικά Μέσα</li>
                             </ul>
                             <Link href="/el/contact" className="trk-btn trk-btn--rounded trk-btn--secondary4">Εγγραφή
                                 <span><span><FaArrowRight /></span></span></Link>

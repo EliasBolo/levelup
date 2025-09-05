@@ -9,7 +9,7 @@ const About = () => {
       <PageHeader
         title="About Us"
         subtitle="About Us"
-        image='images/bg/home1/1.png'
+        image='/images/banner/banner3.webp'
       />
 
       <section className="about about--style5 padding-top padding-bottom">

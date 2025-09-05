@@ -12,7 +12,7 @@ const About = () => {
       <PageHeader
         title="Σχετικά με εμάς"
         subtitle="Σχετικά με εμάς"
-        image='/images/bg/home1/1.png'
+        image='/images/banner/banner3.webp'
       />
 
       <section className="about about--style5 padding-top padding-bottom">

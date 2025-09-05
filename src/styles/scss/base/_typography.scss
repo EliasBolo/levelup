@@ -82,3 +82,37 @@ ol {
   @extend %mb-0;
   padding-left: 0;
 }
+
+// Greek language font overrides
+html[lang="el"],
+[lang="el"] {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif !important;
+  }
+  
+  h1, h2 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+  }
+  
+  p, body, div, span, a, li, td, th {
+    font-family: 'Roboto', sans-serif !important;
+  }
+}
+
+// Specific overrides for Greek pages
+body:has([href*="/el/"]),
+body:has([data-lang="el"]) {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif !important;
+  }
+  
+  h1, h2 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500 !important;
+  }
+  
+  p, div, span, a, li, td, th {
+    font-family: 'Roboto', sans-serif !important;
+  }
+}

@@ -13,7 +13,7 @@ const categoryListFour= [
     },
     {
         "icon": "https://thetork.com/demos/vue/educax/images/category/home4/3.png",
-        "title": "ΧΑΡΟΥΜΕΝΑ",
+        "title": "ΣΥΝΕΡΓΑΣΙΑ",
         "description": "Τα χαρούμενα μαθήματά μας δημιουργούν ένα συμπεριληπτικό περιβάλλον όπου όλοι συμμετέχουν και η μάθηση γίνεται μια διασκεδαστική, κοινή εμπειρία."
     },
     {
