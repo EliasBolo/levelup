@@ -16,26 +16,6 @@ const WhoWeAre = () => {
                         <p>Learning happens through modern teaching methods, where technology, gamification and teamwork combine, creating a lively and engaging lesson. We emphasize genuine understanding of the language and skill development in a creative and playful way, so that children enjoy the journey of learning from their first steps.</p>
                         <p>Above all, we cultivate an environment of trust and respect, where students feel safe to express themselves, make mistakes, try and truly be themselves. Thus, the foreign language becomes not just a lesson, but an experience that accompanies them throughout their lives.</p>
                     </div>
-                    <div className="about__counter">
-                        <div className="about__counter-item">
-                            <h3>
-                                <Counter parentQuerySelector=".about__counter-item" start={0}  end="10" delay={10} />
-                            </h3>
-                            <p>Years of Experience</p>
-                        </div>
-                        <div className="about__counter-item">
-                            <h3>
-                                <Counter parentQuerySelector=".about__counter-item" start={0} end="100" delay={10} />%
-                            </h3>
-                            <p>Satisfaction Rate</p>
-                        </div>
-                        <div className="about__counter-item">
-                            <h3>
-                                <Counter parentQuerySelector=".about__counter-item" start={0} end="4" delay={10} />+
-                            </h3>
-                            <p>Certifications</p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div className="col-lg-5 col-md-4">
