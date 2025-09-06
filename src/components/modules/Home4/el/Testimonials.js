@@ -1,9 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
-import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
+import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
-import 'swiper/css/pagination';
 import testimonials from '../../../../api/index4/el/home-testimonials.json';
 
 const Testimonials = () => {
@@ -18,7 +17,7 @@ const Testimonials = () => {
         <div className="testimonial__wrapper">
           <Swiper
             className='testimonial__slider'
-            modules={[Pagination, Autoplay, EffectFade]}
+            modules={[Autoplay, EffectFade]}
             loop={true}
             autoplay={{
               delay: 2000,
@@ -28,11 +27,6 @@ const Testimonials = () => {
             grabCursor={true}
             slidesPerView={1}
             effect={'fade'}
-            pagination={{
-              clickable: true,
-              bulletClass: 'swiper-pagination-bullet',
-              bulletActiveClass: 'swiper-pagination-bullet-active',
-            }}
           >
             {testimonials.map((item, index) => (
               <SwiperSlide key={index}>
@@ -45,10 +39,6 @@ const Testimonials = () => {
                       <blockquote className="blockquote">
                         <p>{item.quote}</p>
                       </blockquote>
-                      <div className="testimonial__item-author">
-                        <p>{item.name}</p>
-                        <span>{item.role}</span>
-                      </div>
                     </div>
                   </div>
                 </div>
