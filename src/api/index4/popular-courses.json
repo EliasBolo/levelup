@@ -1,8 +1,8 @@
 [
     {
-        "thumbnail": "/images/course/home4/3.png",
+        "thumbnail": "/images/course/home4/en1.webp",
         "title": "English",
-        "description" : "We offer comprehensive English and German language courses designed to help students achieve fluency with confidence.",
+        "description" : "Μαθήματα Αγγλικών για όλα τα επίπεδα και όλες τις ηλικίες, δια ζώσης και online. Στόχος η αγάπη για τη γλώσσα και το χτίσιμο γερών βάσεων για σίγουρη επιτυχία. Όλες οι πιστοποιήσεις.",
         "rating": 4.9,
         "ratingCount": 526,
         "age": "5-8 Years",
@@ -12,9 +12,9 @@
         "avatarName": " Alexander"
     },
     {
-        "thumbnail": "/images/course/home4/1.png",
+        "thumbnail": "/images/course/home4/ger1.webp",
         "title": "German",
-        "description" : "We offer comprehensive English and German language courses designed to help students achieve fluency with confidence.",
+        "description" : "Εκμάθηση Γερμανικών. Όλα τα επίπεδα. Όλες οι ηλικίες. Δια ζώσης και online. Σύγχρονο και δομημένο πρόγραμμα σπουδών. Όλες οι πιστοποιήσεις.",
         "rating": 4.9,
         "ratingCount": 526,
         "age": "5-8 Years",
