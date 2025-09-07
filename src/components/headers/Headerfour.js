@@ -117,8 +117,14 @@ return (
                 <li>
                   <Link href={isEnglish ? "/en" : "/"}>{isEnglish ? "Home" : "Αρχική"}</Link>
                 </li>
-                <li>
-                  <Link href={isEnglish ? "/en/courses" : "/courses"}>{isEnglish ? "Courses" : "Μαθήματα"}</Link>
+                <li className="menu-item-has-children">
+                  <Link href="#" onClick={toggleActive}>
+                    {isEnglish ? "Courses" : "Μαθήματα"}
+                  </Link>
+                  <ul className="submenu">
+                    <li><Link href={isEnglish ? "/en/english-faq" : "/el/english-faq"}>{isEnglish ? "English" : "Αγγλικά"}</Link></li>
+                    <li><Link href={isEnglish ? "/de/german-faq" : "/el/german-faq"}>{isEnglish ? "German" : "Γερμανικά"}</Link></li>
+                  </ul>
                 </li>
                 <li>
                   <Link href={isEnglish ? "/en/about" : "/about"}>{isEnglish ? "About Us" : "Σχετικά με εμάς"}</Link>

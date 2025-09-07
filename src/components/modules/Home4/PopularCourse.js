@@ -27,7 +27,11 @@ const PopularCourse = () => {
                       </div>
                     </div>
                     <div className="course__content">
-                      <h5> <Link href={isGreek ? "/el/courses" : "/en/courses"}>{item.title}</Link> </h5>
+                      <h5> <Link href={
+                        index === 0 ? (isGreek ? "/el/english-faq" : "/en/english-faq") : 
+                        index === 1 ? (isGreek ? "/el/german-faq" : "/de/german-faq") : 
+                        isGreek ? "/el/courses" : "/en/courses"
+                      }>{item.title}</Link> </h5>
                       <p>{item.description}</p>
                     </div>
                   </div>
