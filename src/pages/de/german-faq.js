@@ -37,8 +37,8 @@ const GermanFAQ = () => {
       <Meta />
       <Headerfour />
       <PageHeader
-        title="German Language FAQ"
-        subtitle="Frequently Asked Questions"
+        title="German"
+        subtitle="German"
         image='/images/banner/banner2.webp'
       />
 

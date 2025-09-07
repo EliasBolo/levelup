@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Maria Papadopoulou",
+    "rating": 5,
+    "quote": "My child eagerly awaits every lesson. The method is creative and the results are already visible in their confidence.",
+    "thumbnail": "/images/testimonial/home1/1.png"
+  },
+  {
+    "id": 2,
+    "name": "Dimitris Kostas",
+    "rating": 5,
+    "quote": "We finally found a place where learning happens with joy. The teacher gives attention to each child individually.",
+    "thumbnail": "/images/testimonial/home1/2.png"
+  },
+  {
+    "id": 3,
+    "name": "Anna Nikolaidou",
+    "rating": 5,
+    "quote": "Level Up is not just a language school, it's a place that cultivates values, confidence and a desire for learning.",
+    "thumbnail": "/images/testimonial/home1/3.png"
+  },
+  {
+    "id": 4,
+    "name": "George Stavrou",
+    "rating": 4,
+    "quote": "What stands out is the warm environment. We feel confident that our child is supported and progressing correctly.",
+    "thumbnail": "/images/testimonial/home1/4.png"
+  },
+  {
+    "id": 5,
+    "name": "Eleni Christou",
+    "rating": 5,
+    "quote": "It's not just language lessons, it's a beautiful experience that gives children joy, motivation and knowledge for the future.",
+    "thumbnail": "/images/testimonial/home1/5.png"
+  }
+]

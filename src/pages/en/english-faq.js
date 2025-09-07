@@ -57,8 +57,8 @@ const EnglishFAQ = () => {
       <Meta />
       <Headerfour />
       <PageHeader
-        title="English Language FAQ"
-        subtitle="Frequently Asked Questions"
+        title="English"
+        subtitle="English"
         image='/images/banner/banner2.webp'
       />
 

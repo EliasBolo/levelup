@@ -1,13 +1,13 @@
 import Preloader from "../../components/headers/Preloader/Preloader";
 import Headerfour from "../../components/headers/Headerfour";
-import Meta from "../../components/meta/Meta";
+import Meta from "../../components/meta/en/Meta";
 import BannerContent from "../../components/modules/Home4/BannerContent";
 import BannerIcon from "../../components/modules/Home4/BannerIcon";
 import Categories from "../../components/modules/Home4/Categories";
 import About from "../../components/modules/Home4/About";
 import PopularCourse from "../../components/modules/Home4/PopularCourse";
 import Gallery from "../../components/modules/Home3/Gallery";
-import Testimonials from "../../components/modules/Home4/Testimonials";
+import Testimonials from "../../components/modules/Home4/en/Testimonials";
 import Footerfour from "../../components/footers/Footerfour";
 
 export default function Home() {

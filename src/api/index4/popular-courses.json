@@ -1,7 +1,7 @@
 [
     {
         "thumbnail": "/images/course/home4/en1.webp",
-        "title": "English",
+        "title": "Αγγλικά",
         "description" : "Μαθήματα Αγγλικών για όλα τα επίπεδα και όλες τις ηλικίες, δια ζώσης και online. Στόχος η αγάπη για τη γλώσσα και το χτίσιμο γερών βάσεων για σίγουρη επιτυχία. Όλες οι πιστοποιήσεις.",
         "rating": 4.9,
         "ratingCount": 526,
@@ -13,7 +13,7 @@
     },
     {
         "thumbnail": "/images/course/home4/ger1.webp",
-        "title": "German",
+        "title": "Γερμανικά",
         "description" : "Εκμάθηση Γερμανικών. Όλα τα επίπεδα. Όλες οι ηλικίες. Δια ζώσης και online. Σύγχρονο και δομημένο πρόγραμμα σπουδών. Όλες οι πιστοποιήσεις.",
         "rating": 4.9,
         "ratingCount": 526,
@@ -72,9 +72,9 @@
         "avatarName": " Courtney"
     },
     {
-        "thumbnail": "/images/course/home4/3.png",
-        "title": "Expression of Creative",
-        "description" : "We offer comprehensive English and German language courses designed to help students achieve fluency with confidence.",
+        "thumbnail": "/images/course/home4/en1.webp",
+        "title": "Αγγλικά",
+        "description" : "Μαθήματα Αγγλικών για όλα τα επίπεδα και όλες τις ηλικίες, δια ζώσης και online. Στόχος η αγάπη για τη γλώσσα και το χτίσιμο γερών βάσεων για σίγουρη επιτυχία. Όλες οι πιστοποιήσεις.",
         "rating": 4.9,
         "ratingCount": 526,
         "age": "5-8 Years",
@@ -84,15 +84,15 @@
         "avatarName": " Alexander"
     },
     {
-        "thumbnail": "/images/course/home4/2.png",
-        "title": "Alphabet Matching Class",
-        "description" : "We offer comprehensive English and German language courses designed to help students achieve fluency with confidence.",
+        "thumbnail": "/images/course/home4/ger1.webp",
+        "title": "Γερμανικά",
+        "description" : "Εκμάθηση Γερμανικών. Όλα τα επίπεδα. Όλες οι ηλικίες. Δια ζώσης και online. Σύγχρονο και δομημένο πρόγραμμα σπουδών. Όλες οι πιστοποιήσεις.",
         "rating": 4.9,
         "ratingCount": 526,
         "age": "5-8 Years",
         "class": 8,
         "price": 224,
-        "avatar": "/images/avatar/2.png",
-        "avatarName": " Courtney"
+        "avatar": "/images/avatar/1.png",
+        "avatarName": " Jerome"
     }
 ]

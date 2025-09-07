@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
-import testimonials from '../../../../api/index4/el/home-testimonials.json';
+import testimonials from '../../../../api/index4/en/home-testimonials.json';
 
 const Testimonials = () => {
 
@@ -11,8 +11,8 @@ const Testimonials = () => {
     <section className='testimonial testimonial--style1 padding-top brand-4' style={{paddingBottom: 0}}>
       <div className='container'>
         <div className="section-header text-center section-header--dark">
-          <h2 className='style2-h2'>Τι λένε για εμάς</h2>
-          <p className="style2">Διαβάστε τις εμπειρίες & τις επιτυχίες μας</p>
+          <h2 className='style2-h2'>What They Say About Us</h2>
+          <p className="style2">Read Our Experiences & Successes</p>
         </div>
         <div className="testimonial__wrapper">
           <Swiper
