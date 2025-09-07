@@ -21,25 +21,11 @@ const BannerContent = () => {
             </div>
         </div>
         <div className="banner-image">
-            <div className="row">
-                <div className="col-lg-4 col-md-4 col-4">
-                    <div className="banner-image__item" data-aos="fade-right" data-aos-duration="1000">
-                        <div className="banner-image__item-inner ">
-                            <img src="/images/banner/4.png" alt="banner-image-banner"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4 col-md-4 col-4">
+            <div className="row justify-content-center">
+                <div className="col-lg-6 col-md-8 col-10">
                     <div className="banner-image__item" data-aos="fade-up" data-aos-duration="1000">
                         <div className="banner-image__item-inner banner-image__item-inner--style2">
-                            <img src="/images/banner/5.png" alt="banner-image-banner"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-lg-4 col-md-4 col-4">
-                    <div className="banner-image__item" data-aos="fade-left" data-aos-duration="1000">
-                        <div className="banner-image__item-inner">
-                            <img src="/images/banner/6.png" alt="banner-image-banner"/>
+                            <img src="/images/banner/dual.webp" alt="banner-image-banner"/>
                         </div>
                     </div>
                 </div>
