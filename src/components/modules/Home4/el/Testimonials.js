@@ -14,7 +14,7 @@ const Testimonials = () => {
           <h2 className='style2-h2'>Τι λένε για εμάς</h2>
           <p className="style2">Διαβάστε τις εμπειρίες & τις επιτυχίες μας</p>
         </div>
-        <div className="testimonial__wrapper">
+        <div className="testimonial__wrapper" style={{overflow: 'hidden'}}>
           <Swiper
             className='testimonial__slider'
             modules={[Autoplay, EffectFade]}
@@ -30,14 +30,14 @@ const Testimonials = () => {
           >
             {testimonials.map((item, index) => (
               <SwiperSlide key={index}>
-                <div className="testimonial__item">
-                  <div className="testimonial__item-inner">
-                    <div className="testimonial__item-content">
+                <div className="testimonial__item" style={{overflow: 'hidden', minHeight: '300px', display: 'flex', alignItems: 'center'}}>
+                  <div className="testimonial__item-inner" style={{overflow: 'hidden', width: '100%'}}>
+                    <div className="testimonial__item-content" style={{overflow: 'hidden', padding: '40px 20px'}}>
                       <span>
                         <FontAwesomeIcon icon={faQuoteLeft} />
                       </span>
-                      <blockquote className="blockquote">
-                        <p>{item.quote}</p>
+                      <blockquote className="blockquote" style={{overflow: 'hidden'}}>
+                        <p style={{overflow: 'hidden', wordWrap: 'break-word', minHeight: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{item.quote}</p>
                       </blockquote>
                     </div>
                   </div>
@@ -48,7 +48,6 @@ const Testimonials = () => {
         </div>
       </div>
     </section>
-
   );
 };
 
