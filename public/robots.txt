@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl all content
+Allow: /el/
+Allow: /en/
+Allow: /de/
+
+# Disallow admin or private areas (if any exist in the future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://levelupkalamata.gr/sitemap.xml
+
+# Crawl delay (optional - helps prevent overloading your server)
+Crawl-delay: 1
