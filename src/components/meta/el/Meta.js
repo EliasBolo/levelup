@@ -30,8 +30,9 @@ const Meta = () => {
          <meta name="language" content="Greek" />
          <meta httpEquiv="Content-Language" content="el" />
          <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-         <link rel="alternate" hrefLang="en" href="https://levelupkalamata.gr/" />
-         <link rel="alternate" hrefLang="el" href="https://levelupkalamata.gr/el/" />
+         <link rel="canonical" href="https://levelupkalamata.gr/" />
+         <link rel="alternate" hrefLang="en" href="https://levelupkalamata.gr/en/" />
+         <link rel="alternate" hrefLang="el" href="https://levelupkalamata.gr/" />
 
          {/* <!-- Structured Data --> */}
          <script
