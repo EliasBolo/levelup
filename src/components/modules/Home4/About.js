@@ -10,7 +10,7 @@ const About = () => {
                     <div className="about__thumb" data-aos="fade-right" data-aos-duration="800">
                         <div className="about__thumb-inner">
                             <div className="about__thumb-image">
-                                <img src="/images/about/3.png" alt="about-image"/>
+                                <img src="/images/about/3.webp" alt="about-image"/>
                             </div>
                         </div>
                     </div>
@@ -26,8 +26,6 @@ const About = () => {
                                 <li> <img src="/images/icon/svg/3.svg" alt="list-icon"/> Lovely Enviroment</li>
                                 <li> <img src="/images/icon/svg/3.svg" alt="list-icon"/> Technology Tools</li>
                             </ul>
-                            <Link href="/contact" className="trk-btn trk-btn--rounded trk-btn--secondary4">Sign Up
-                                <span><span><FaArrowRight /></span></span></Link>
                         </div>
                     </div>
                 </div>

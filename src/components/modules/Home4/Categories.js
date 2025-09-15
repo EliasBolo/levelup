@@ -38,8 +38,6 @@ const Categories = () => {
                         <div className="categories__item-content">
                             <h5 className="style4">{ item.title }</h5>
                             <p>{item.description}</p>
-                            <Link href="/contact" className="trk-btn trk-btn--rounded trk-btn--secondary4">{"Sign Up "}
-                                <span><FaArrowRight /></span> </Link>
                         </div>
                     </div>
                 </div>

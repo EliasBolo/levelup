@@ -1,0 +1,26 @@
+[
+    {
+        "thumbnail": "/images/course/home4/en1.webp",
+        "title": "English",
+        "description" : "English lessons for all levels and all ages, in-person and online. Our goal is to foster a love for the language and build strong foundations for guaranteed success. All certifications available.",
+        "rating": 4.9,
+        "ratingCount": 526,
+        "age": "5-8 Years",
+        "class": 8,
+        "price": 224,
+        "avatar": "/images/avatar/3.png",
+        "avatarName": " Alexander"
+    },
+    {
+        "thumbnail": "/images/course/home4/ger1.webp",
+        "title": "German",
+        "description" : "German language learning. All levels. All ages. In-person and online. Modern and structured curriculum. All certifications available.",
+        "rating": 4.9,
+        "ratingCount": 526,
+        "age": "5-8 Years",
+        "class": 8,
+        "price": 224,
+        "avatar": "/images/avatar/1.png",
+        "avatarName": " Jerome"
+    }
+]

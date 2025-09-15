@@ -10,7 +10,7 @@ export default function PageHeader({ image, title, subtitle }) {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                  <Link href="/">Home</Link>
+                  <Link href="/en">Home</Link>
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
                   {subtitle}

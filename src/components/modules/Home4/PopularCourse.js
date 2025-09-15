@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router';
-import coursedata from '../../../api/index4/popular-courses.json'
+import coursedataEn from '../../../api/index4/en/popular-courses.json'
+import coursedataEl from '../../../api/index4/el/popular-courses.json'
 
 const PopularCourse = () => {
   const router = useRouter();
   const isGreek = router.pathname.startsWith('/el') || router.asPath.startsWith('/el') || router.locale === 'el' || router.pathname === '/' || router.asPath === '/';
+  const coursedata = isGreek ? coursedataEl : coursedataEn;
   const backgroundImage = {
     backgroundImage: "url(/images/bg/home4/1.png)",
   }
