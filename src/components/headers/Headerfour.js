@@ -130,6 +130,9 @@ return (
                   <Link href={isEnglish ? "/en/about" : "/about"}>{isEnglish ? "About Us" : "Σχετικά με εμάς"}</Link>
                 </li>
                 <li>
+                  <Link href={isEnglish ? "/en/online" : "/online"}>{isEnglish ? "Online" : "Διαδικτυακά"}</Link>
+                </li>
+                <li>
                   <Link href={isEnglish ? "/en/contact" : "/contact"}>{isEnglish ? "Contact Us" : "Επικοινωνία"}</Link>
                 </li>
                 <li className="language-switcher d-none d-xl-block">

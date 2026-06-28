@@ -14,9 +14,11 @@ const Footerfour = () => {
                   router.pathname === '/about' ||
                   router.pathname === '/courses' ||
                   router.pathname === '/contact' ||
+                  router.pathname === '/online' ||
                   router.asPath === '/about' ||
                   router.asPath === '/courses' ||
-                  router.asPath === '/contact'
+                  router.asPath === '/contact' ||
+                  router.asPath === '/online'
 
   return (
     <>
@@ -103,6 +105,12 @@ const Footerfour = () => {
                             {" "}
                             <Link href={isGreek ? "/el/about" : "/about"}>
                               {isGreek ? "Σχετικά με εμάς" : "About Us"}
+                            </Link>
+                          </li>
+                          <li className="footer__linklist-item">
+                            {" "}
+                            <Link href={isGreek ? "/online" : "/en/online"}>
+                              {isGreek ? "Διαδικτυακά" : "Online"}
                             </Link>
                           </li>
                           <li className="footer__linklist-item">
